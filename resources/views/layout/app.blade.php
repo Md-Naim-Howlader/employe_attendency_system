@@ -87,21 +87,21 @@
     </script>
     <script>
         $(document).on("click", "#delete", function(e) {
-            e.preventDefault(); // Prevent default behavior
-            let link = $(this).attr("href"); // Get the link of the delete button
+            e.preventDefault();
+            let link = $(this).attr("href");
 
             Swal.fire({
                     title: "Are you sure you want to delete?",
                     text: "Once deleted, this will be permanently gone!",
                     icon: "warning",
-                    showCancelButton: true, // Show cancel button
-                    confirmButtonColor: "#3085d6", // Confirm button color
-                    cancelButtonColor: "#d33", // Cancel button color
-                    confirmButtonText: "Yes, delete it!", // Button text for confirmation
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!",
                 })
                 .then((result) => {
                     if (result.isConfirmed) {
-                        window.location.href = link; // If confirmed, redirect to delete link
+                        window.location.href = link;
                     } else {
                         Swal.fire("Safe data!");
                     }

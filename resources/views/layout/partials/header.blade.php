@@ -16,10 +16,6 @@
 
          </ul>
 
-         <!-- Right Side -->
-         <div class="d-flex align-items-center">
-             <span class="text-white me-2">Admin</span>
-             <img src="" class="rounded-circle" alt="admin">
-         </div>
+
      </div>
  </nav>
